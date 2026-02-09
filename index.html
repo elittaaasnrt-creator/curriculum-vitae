@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>CV Jelita Hati Sinurat</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+body{
+    background:#f6f1fb;
+}
+.container{
+    display:flex;
+}
+
+.sidebar{
+    width:260px;
+    background:#b39ddb;
+    color:white;
+    min-height:100vh;
+    padding:25px;
+    position:fixed;
+}
+.sidebar h2{
+    text-align:center;
+    margin-bottom:5px;
+    letter-spacing:1px;
+}
+.sidebar p{
+    text-align:center;
+    font-size:14px;
+    margin-bottom:30px;
+    opacity:0.9;
+}
+.sidebar a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:12px;
+    border-radius:8px;
+    margin-bottom:8px;
+    transition:0.3s;
+}
+.sidebar a:hover{
+    background:#d1c4e9;
+    color:#4a148c;
+}
+
+.content{
+    margin-left:280px;
+    padding:45px;
+    width:100%;
+}
+.card{
+    background:white;
+    padding:30px;
+    border-radius:16px;
+    margin-bottom:40px;
+}
+
+.header{
+    display:flex;
+    gap:30px;
+    align-items:center;
+}
+.header img{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #ede7f6;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+h1{
+    color:#6a1b9a;
+    margin-bottom:5px;
+}
+h3{
+    color:#7e57c2;
+    margin-bottom:10px;
+}
+.header p{
+    line-height:1.6;
+    text-align:justify;
+}
+
+.info{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+    margin-top:18px;
+}
+.info i{
+    color:#7e57c2;
+    margin-right:6px;
+}
+
+.timeline{
+    border-left:3px solid #c5b4e3;
+    padding-left:22px;
+}
+.timeline div{
+    margin-bottom:22px;
+    line-height:1.5;
+}
+
+.badge{
+    display:inline-block;
+    background:#ede7f6;
+    color:#4a148c;
+    padding:8px 16px;
+    border-radius:20px;
+    margin:6px;
+    font-size:14px;
+}
+
+.slider{
+    display:flex;
+    gap:18px;
+    overflow-x:auto;
+    padding-bottom:10px;
+}
+.slider::-webkit-scrollbar{
+    height:6px;
+}
+.slider::-webkit-scrollbar-thumb{
+    background:#b39ddb;
+    border-radius:10px;
+}
+.slider-item{
+    min-width:240px;
+    text-align:center;
+}
+.slider-item img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+    border-radius:14px;
+}
+.slider-item p{
+    margin-top:10px;
+    color:#6a1b9a;
+    font-weight:500;
+}
+
+.social a{
+    font-size:28px;
+    margin-right:20px;
+    color:#6a1b9a;
+    text-decoration:none;
+    transition:0.3s;
+}
+.social a:hover{
+    color:#4a148c;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="sidebar">
+    <h2>JELITA</h2>
+    <p>Mahasiswi Teknologi Informasi</p>
+
+    <a href="#about">Intro</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#hobby">Hobby</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<div class="content">
+
+<div class="card header" id="about">
+    <img src="profile.jpeg" alt="Foto Profil Jelita">
+    <div>
+        <h1>Hi, I am Jelita</h1>
+        <h3>Mahasiswi Teknologi Informasi</h3>
+        <p>
+            Saya merupakan mahasiswi semester 2 Program Studi Teknologi Informasi
+            Universitas Sumatera Utara. Saya memiliki ketertarikan pada dunia teknologi,
+            khususnya dalam pengembangan web dan desain antarmuka sederhana. Selain itu,
+            saya juga aktif mengikuti kegiatan organisasi dan terbiasa bekerja secara
+            terstruktur, bertanggung jawab, serta mampu beradaptasi dengan baik.
+        </p>
+
+        <div class="info">
+            <p><i class="fa-solid fa-location-dot"></i> Medan, 24 November 2007</p>
+            <p><i class="fa-solid fa-house"></i> Simalingkar B, Medan</p>
+            <p><i class="fa-solid fa-envelope"></i> elittaaasnrt@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> 0831-8183-1837</p>
+        </div>
+    </div>
+</div>
+
+<div class="card" id="experience">
+    <h1>Experience</h1>
+    <div class="timeline">
+        <div>
+            <b>Orang Muda Katolik (OMK)</b><br>
+            Aktif terlibat dalam kegiatan pelayanan dan organisasi gereja.
+        </div>
+        <div>
+            <b>Kepanitiaan Gereja</b><br>
+            Berperan sebagai panitia dalam berbagai kegiatan gereja, termasuk perayaan Natal.
+        </div>
+        <div>
+            <b>Private Les Matematika</b><br>
+            Memberikan bimbingan belajar matematika secara privat kepada siswa.
+        </div>
+    </div>
+</div>
+
+<div class="card" id="education">
+    <h1>Education</h1>
+    <div class="timeline">
+        <div><b>SDS Santo Ignatius Medan</b></div>
+        <div><b>SMPS Santo Thomas 1 Medan</b></div>
+        <div><b>SMAS Santo Thomas 1 Medan</b></div>
+        <div>
+            <b>Universitas Sumatera Utara</b><br>
+            Teknologi Informasi (2025 – Sekarang)
+        </div>
+    </div>
+</div>
+
+<div class="card" id="skills">
+    <h1>Skills</h1>
+    <div class="badge">HTML</div>
+    <div class="badge">CSS</div>
+    <div class="badge">JavaScript</div>
+    <div class="badge">Microsoft Word</div>
+    <div class="badge">Canva</div>
+</div>
+
+<div class="card" id="hobby">
+    <h1>Hobby</h1>
+    <div class="slider">
+        <div class="slider-item">
+            <img src="hobby1.jpeg">
+            <p>Memasak</p>
+        </div>
+        <div class="slider-item">
+            <img src="hobby2.jpeg">
+            <p>Berenang</p>
+        </div>
+        <div class="slider-item">
+            <img src="hobby3.jpeg">
+            <p>Menonton</p>
+        </div>
+    </div>
+</div>
+
+<div class="card" id="portfolio">
+    <h1>Portfolio</h1>
+    <div class="slider">
+        <div class="slider-item">
+            <img src="porto1.png">
+            <p>Project 1</p>
+        </div>
+        <div class="slider-item">
+            <img src="porto2.jpeg">
+            <p>Project 2</p>
+        </div>
+        <div class="slider-item">
+            <img src="porto3.jpeg">
+            <p>Project 3</p>
+        </div>
+    </div>
+</div>
+
+<div class="card" id="contact">
+    <h1>Contact & Social Media</h1>
+    <div class="social">
+        <a href="https://instagram.com/yledori" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/search/results/all/?keywords=Jelita%20Sinurat" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/elittaaasnrt-creator" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+    </div>
+</div>
+
+</div>
+</div>
+
+<script>
+document.querySelectorAll('.sidebar a').forEach(link=>{
+    link.addEventListener('click',e=>{
+        e.preventDefault();
+        document.querySelector(link.getAttribute('href'))
+        .scrollIntoView({behavior:'smooth'});
+    });
+});
+</script>
+
+</body>
+</html>
